@@ -1,0 +1,3 @@
+# Accepted risks - suppressed after security review
+# CVE-2025-69720 is in ncurses (debian base layer), no fix available yet
+CVE-2025-69720
