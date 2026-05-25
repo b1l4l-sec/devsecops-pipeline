@@ -6,7 +6,7 @@ A production-grade DevSecOps pipeline built with security at every stage.
 
 ## 🏗️ Architecture
 
-\`\`\`
+```
 git push
     ↓
 ┌─────────────────────────┐
@@ -24,7 +24,7 @@ git push
 ┌─────────────────────────┐
 │  JOB 4: Deploy          │  → Auto deploy to production
 └─────────────────────────┘
-\`\`\`
+```
 
 ## 🛠️ Tech Stack
 
@@ -45,35 +45,49 @@ git push
 - ✅ Accepted risks documented in .trivyignore
 - ✅ Health checks on container
 
+## 📊 Pipeline Visualization
+
+### Workflow Runs
+![Workflow Runs](image1)
+
+### Pipeline Execution Details
+![Pipeline Execution](image2)
+
+### Security Vulnerability Scanner
+![Vulnerability Scanner](image3)
+
+### Container Scan Report
+![Container Scan Report](image4)
+
 ## 🚀 Quick Start
 
 ### Run locally
 
-\`\`\`bash
+```bash
 git clone https://github.com/b1l4l-sec/devsecops-pipeline.git
 cd devsecops-pipeline
 docker build -t devsecops-app:1.0.0 ./app
 docker run -d -p 5000:5000 devsecops-app:1.0.0
 curl http://localhost:5000/health
-\`\`\`
+```
 
 ### Deploy with Terraform
 
-\`\`\`bash
+```bash
 cd terraform
 terraform init
 terraform apply -auto-approve
-\`\`\`
+```
 
 ### Run security scan
 
-\`\`\`bash
+```bash
 trivy image --severity HIGH,CRITICAL devsecops-app:1.0.0
-\`\`\`
+```
 
 ## 📁 Project Structure
 
-\`\`\`
+```
 devsecops-pipeline/
 ├── .github/workflows/pipeline.yml   # CI/CD pipeline
 ├── app/
@@ -86,7 +100,7 @@ devsecops-pipeline/
 │   └── outputs.tf                   # Outputs
 ├── tests/test_app.py                # Unit tests
 └── .trivyignore                     # CVE exceptions
-\`\`\`
+```
 
 ## 🔄 Pipeline Flow
 
@@ -99,4 +113,4 @@ Every git push to main automatically:
 
 ## 👤 Author
 
-**b1l4l-sec** 
+**b1l4l-sec**
