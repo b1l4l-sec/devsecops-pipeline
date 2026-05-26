@@ -1,10 +1,10 @@
-# 🔐 DevSecOps Secure CI/CD Pipeline
+#  DevSecOps Secure CI/CD Pipeline
 
 ![Pipeline](https://github.com/b1l4l-sec/devsecops-pipeline/actions/workflows/pipeline.yml/badge.svg)
 
 A production-grade DevSecOps pipeline built with security at every stage.
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 git push
@@ -26,7 +26,7 @@ git push
 └─────────────────────────┘
 ```
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Purpose |
 |------|---------|
@@ -36,7 +36,7 @@ git push
 | Terraform | Infrastructure as Code |
 | GitHub Actions | CI/CD automation |
 
-## 🔒 Security Features
+##  Security Features
 
 - ✅ Non-root container user
 - ✅ Minimal base image (python:3.12-slim)
@@ -45,7 +45,7 @@ git push
 - ✅ Accepted risks documented in .trivyignore
 - ✅ Health checks on container
 
-## 📊 Pipeline Visualization
+##  Pipeline Visualization
 
 ### Workflow Runs
 ![Workflow Runs](image1)
@@ -59,7 +59,7 @@ git push
 ### Container Scan Report
 ![Container Scan Report](image4)
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Run locally
 
@@ -85,7 +85,7 @@ terraform apply -auto-approve
 trivy image --severity HIGH,CRITICAL devsecops-app:1.0.0
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 devsecops-pipeline/
@@ -102,7 +102,7 @@ devsecops-pipeline/
 └── .trivyignore                     # CVE exceptions
 ```
 
-## 🔄 Pipeline Flow
+##  Pipeline Flow
 
 Every git push to main automatically:
 1. Runs unit tests
@@ -111,6 +111,6 @@ Every git push to main automatically:
 4. Scans container for HIGH/CRITICAL CVEs
 5. Deploys if all security gates pass
 
-## 👤 Author
+##  Author
 
 **b1l4l-sec**
