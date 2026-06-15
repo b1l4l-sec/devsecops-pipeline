@@ -91,11 +91,12 @@ jobs:
         continue-on-error: true
         with:
           name: docker-image
+          path: docker-image
 
       - name: Prepare Docker image
         run: |
-          if [ -f image.tar.gz ]; then
-            docker load < image.tar.gz
+          if [ -f docker-image/image.tar.gz ]; then
+            docker load < docker-image/image.tar.gz
           else
             echo "docker-image artifact unavailable, rebuilding image for scan..."
             docker build -t ${{ env.APP_NAME }}:${{ env.IMAGE_TAG }} ./app
