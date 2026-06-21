@@ -48,16 +48,16 @@ git push
 ##  Pipeline Visualization
 
 ### Workflow Runs
-![Workflow Runs](1 actions.png)
+![Workflow Runs](1%20actions.png)
 
 ### Pipeline Execution Details
-![Pipeline Execution](image2)
+![Pipeline Execution](2%20details.png)
 
 ### Security Vulnerability Scanner
-![Vulnerability Scanner](image3)
+![Vulnerability Scanner](3%20scannerApp.png)
 
 ### Container Scan Report
-![Container Scan Report](image4)
+![Container Scan Report](4%20trivy%20scan.png)
 
 ##  Quick Start
 
