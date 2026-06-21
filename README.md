@@ -48,7 +48,7 @@ git push
 ##  Pipeline Visualization
 
 ### Workflow Runs
-![Workflow Runs](image1)
+![Workflow Runs](1 actions.png)
 
 ### Pipeline Execution Details
 ![Pipeline Execution](image2)
