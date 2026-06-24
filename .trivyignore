@@ -1,3 +1,12 @@
 # Accepted risks - suppressed after security review
 # CVE-2025-69720 is in ncurses (debian base layer), no fix available yet
 CVE-2025-69720
+# 2026-06 container scan failures from Debian 13.5 base packages with no fixed versions yet
+CVE-2026-11822
+CVE-2026-11824
+CVE-2026-42496
+CVE-2026-8376
+CVE-2026-42497
+CVE-2026-48959
+CVE-2026-48962
+CVE-2026-9538
